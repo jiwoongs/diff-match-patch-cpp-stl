@@ -17,7 +17,7 @@ wstring readFile(const char *filename) {
 }
 
 int main(int /* argc */, char ** /* argv */) {
-  wstring text1 = rdFile("speedtest1.txt");
+  wstring text1 = readFile("speedtest1.txt");
   wstring text2 = readFile("speedtest2.txt");
 
   diff_match_patch<wstring> dmp;
